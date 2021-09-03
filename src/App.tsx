@@ -1,10 +1,16 @@
+import { BrowserRouter } from "react-router-dom";
 import { GlobalStyle } from "./styles/global";
+import Provider from "./hooks";
+import Routes from "./routes";
 
 function App() {
   return (
-    <>
-      <GlobalStyle />
-    </>
+    <Provider>
+      <BrowserRouter>
+        <GlobalStyle />
+        <Routes />
+      </BrowserRouter>
+    </Provider>
   );
 }
 
