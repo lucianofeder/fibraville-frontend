@@ -17,6 +17,11 @@ export const GlobalStyle = createGlobalStyle`
         --text-color-dashboard: #81829F;
         --text-color-warning: #F53030;
         --text-color-currency: #32936F;
+        --border-radius: 8px;
+
+        @media (min-width: 768px) {
+            --border-radius: 16px;
+        }
     }
 
     body, button, a {
