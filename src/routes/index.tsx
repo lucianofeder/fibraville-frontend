@@ -1,6 +1,6 @@
 import { Switch } from "react-router-dom";
-// import Route from "./route";
-// import LandingPage from "../pages/LandingPage";
+import Route from "./route";
+import LandingPage from "../pages/LandingPage";
 // import Login from "../pages/Login";
 // import NotFound from "../pages/NotFound";
 // import ClientDashboard from "../pages/Client/Dashboard";
@@ -16,10 +16,10 @@ const Routes = () => {
 
   return (
     <Switch>
-      {/* <Route exact path="/" component={LandingPage} />
-      <Route path="/login" component={Login} />
+      <Route exact path="/" component={LandingPage} />
+      {/* <Route path="/login" component={Login} />
       <Route exact path="/dashboard" component={***client, admin ou representative Dashboard***} isPrivate />
-      <Route path="*" component={NotFound} /> */}
+      <Route path="*" component={NotFound} />  */}
     </Switch>
   );
 };

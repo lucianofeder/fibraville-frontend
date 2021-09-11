@@ -49,7 +49,7 @@ const CardPlan = ({ plan }: Props) => {
 
   return (
     <Container>
-      <TitlePlan bgcolor={bgColor}>PLANO {name}</TitlePlan>
+      <TitlePlan bgcolor={bgColor}>{name}</TitlePlan>
       <DescriptionArea>
         <Header bgcolor={bgColor}>
           <HeaderInfo>{download} MEGA</HeaderInfo>
