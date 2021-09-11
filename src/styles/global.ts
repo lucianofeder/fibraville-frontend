@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     :root {
         --bg-color-main: #110066;
         --bg-color-secondary: #274690;
+        --bg-client-main: #fafafa;
         --text-color-main: #1E2749;
         --text-color-secondary: #515278;
         --text-color-dashboard: #81829F;
