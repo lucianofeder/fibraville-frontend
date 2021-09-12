@@ -78,6 +78,10 @@ export const Menu = styled.nav`
         position: relative;
         transition: color 300ms ease-in-out;
 
+        @media (max-width: 847px) {
+          font-size: 1.2rem;
+        }
+
         &:hover,
         &:focus {
           color: #90cbfb;
