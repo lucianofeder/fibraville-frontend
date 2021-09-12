@@ -8,7 +8,7 @@ import { BsLockFill } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaGlobe, FaFacebookF, FaInstagram } from "react-icons/fa";
 import { CgPhone } from "react-icons/cg";
-import { IoLogoWhatsapp } from "react-icons/io";
+import { IoLogoWhatsapp, IoMdClose } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { Link as Scroll } from "react-scroll";
 import {
@@ -45,13 +45,13 @@ const responsive = {
   0: {
     items: 1,
   },
-  767: {
+  579: {
     items: 2,
   },
-  960: {
+  989: {
     items: 3,
   },
-  1260: {
+  1279: {
     items: 4,
   },
 };
@@ -80,7 +80,7 @@ const LandingPage = () => {
         <Container>
           <Logo width="200" />
           <label htmlFor="menu" onClick={toogleMenu}>
-            <GiHamburgerMenu />
+            {isOpen ? <IoMdClose /> : <GiHamburgerMenu />}
           </label>
           <input
             type="checkbox"
