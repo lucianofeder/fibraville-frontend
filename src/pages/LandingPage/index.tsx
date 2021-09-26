@@ -16,6 +16,7 @@ import {
   Container,
   Menu,
   Banner,
+  InnerBanner,
   Main,
   AboutUs,
   Services,
@@ -27,7 +28,12 @@ import {
   MainContainer,
   Footer,
 } from "./style";
-import { BASE_PLAN, PLUS_PLAN, EXTREME_PLAN, EXCLUSIVE_PLAN } from "./plans";
+import {
+  BASE_PLAN,
+  PLUS_PLAN,
+  EXTREME_PLAN,
+  EXCLUSIVE_PLAN,
+} from "../../utils/plans";
 import animationData from "../../assets/lottie/contact-us.json";
 import servicesImg from "../../assets/img/home-services.png";
 import internetImg from "../../assets/img/home-services-internet.png";
@@ -156,10 +162,12 @@ const LandingPage = () => {
         </Container>
       </Header>
       <Banner>
-        <div>
-          <p>Chegou em Joinville </p>
-          <span>A internet que nem a chuva derruba</span>
-        </div>
+        <InnerBanner>
+          <div>
+            <p>Chegou em Joinville </p>
+            <span>A internet que nem a chuva derruba</span>
+          </div>
+        </InnerBanner>
       </Banner>
       <Main>
         <MainContainer>
@@ -252,6 +260,7 @@ const LandingPage = () => {
                 href="https://www.facebook.com/fibraville"
                 target="_blank"
                 rel="noreferrer"
+                title="Siga nosso Facebook!"
               >
                 <FaFacebookF />
               </a>
@@ -259,6 +268,7 @@ const LandingPage = () => {
                 href="https://www.instagram.com/fibraville/"
                 target="_blank"
                 rel="noreferrer"
+                title="Siga nosso Instagram!"
               >
                 <FaInstagram />
               </a>
