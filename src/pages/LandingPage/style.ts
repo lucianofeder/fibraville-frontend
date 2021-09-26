@@ -169,7 +169,12 @@ export const Banner = styled.div`
   max-height: 430px;
   background: url(${banner}) no-repeat left bottom;
   background-size: cover;
-  filter: hue-rotate(25deg);
+`;
+
+export const InnerBanner = styled.div`
+  height: 100%;
+  width: 100%;
+  background-color: rgba(17, 0, 102, 0.3);
 
   div {
     color: #ffffff;
