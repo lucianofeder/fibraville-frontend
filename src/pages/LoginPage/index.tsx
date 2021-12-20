@@ -14,37 +14,38 @@ const LoginPage = () => {
     const HandleMyPlans = () => {
 
     }
-    return
-    <>
-        <Container>
-            <FullContainer>
-                <LeftContainer>
-                    <Logo/>
-                    <ContainerForm>
-                        <FormTitle>
-                            Acesse com seus dados
-                        </FormTitle>
-                        <Form >
-                            <Input register={register} name='CPF/CNPJ' placeholder='CPF/CNPJ' schema="login"/>
-                            <Input register={register} name='password' placeholder='senha' schema="login"/>
-                            <Button theme='user' onClick={ ()=> HandleSubmit()}>
-                                Acessar
-                            </Button>
-                        </Form>
-                        <ForgotPassword to='/'>
-                            Esqueceu a senha?
-                        </ForgotPassword>
-                    </ContainerForm>
-                </LeftContainer>
-                <RightContainer>
-                    <NotClient>
-                        <p>não é cliente?</p>
-                        <Button children='Confira os planos' theme='mobileCheckPlans' onClick={()=> HandleMyPlans} />
-                    </NotClient>
-                </RightContainer>
-            </FullContainer>
-        </Container>
-    </>
+    return(
+        <>
+            <Container>
+                <FullContainer>
+                    <LeftContainer>
+                        <Logo/>
+                        <ContainerForm>
+                            <FormTitle>
+                                Acesse com seus dados
+                            </FormTitle>
+                            <Form >
+                                <Input register={register} name='CPF/CNPJ' placeholder='CPF/CNPJ' schema="login"/>
+                                <Input register={register} name='password' placeholder='senha' schema="login"/>
+                                <Button theme='user' onClick={ ()=> HandleSubmit()}>
+                                    Acessar
+                                </Button>
+                            </Form>
+                            <ForgotPassword to='/'>
+                                Esqueceu a senha?
+                            </ForgotPassword>
+                        </ContainerForm>
+                    </LeftContainer>
+                    <RightContainer>
+                        <NotClient>
+                            <p>não é cliente?</p>
+                            <Button children='Confira os planos' theme='mobileCheckPlans' onClick={()=> HandleMyPlans} />
+                        </NotClient>
+                    </RightContainer>
+                </FullContainer>
+            </Container>
+        </>
+    )
 }
 
 export default LoginPage
